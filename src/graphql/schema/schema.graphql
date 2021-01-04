@@ -1,0 +1,16 @@
+# Schema con la definición de typeDefs
+# Query & Mutation
+
+
+# --- Queries ---- #
+
+type Query {
+  test: String!
+}
+
+
+
+
+
+
+# ----- Mutations ----- #

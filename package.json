@@ -1,0 +1,23 @@
+{
+  "name": "suci-api",
+  "version": "1.0.0",
+  "description": "API SUCI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server/index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "mongoose": "^5.11.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "nodemon": "^2.0.6"
+  }
+}
