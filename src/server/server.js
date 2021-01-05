@@ -6,8 +6,13 @@ import { GraphQLServer } from "graphql-yoga";
 import path from "path";
 import resolvers from "../graphql/resolvers";
 
+// Importación de los schemas.graphql
+const queries = path.join(__dirname, "../graphql/schema/Query.graphql");
+const mutations = path.join(__dirname, "../graphql/schema/Mutation.graphql");
+
+// creación del server
 const server = new GraphQLServer({
-  typeDefs: path.join(__dirname, "../graphql/schema/schema.graphql"),
+  typeDefs: [queries, mutations],
   resolvers,
 });
 

@@ -1,0 +1,17 @@
+# Schema con la definición de typeDefs
+
+# --- Queries ---- #
+  type Query {
+    test: String!
+    tasks: [Task]
+  }
+
+# Definición del tipo Task
+  type Task {
+    _id: ID!
+    title: String!
+    description: String!
+    number: Int
+  }
+
+

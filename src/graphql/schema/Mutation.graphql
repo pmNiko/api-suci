@@ -1,0 +1,18 @@
+ # Definición del schema de Mutation
+
+  type Mutation {
+    createTask(input: TaskInput): TaskMutation
+  }
+
+  input TaskInput {
+    title: String!
+    description: String!
+    number: Int
+  }
+
+  type TaskMutation {
+    _id: ID
+    title: String!
+    description: String!
+    number: Int
+  }
